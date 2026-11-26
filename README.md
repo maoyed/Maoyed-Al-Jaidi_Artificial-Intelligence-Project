@@ -1,39 +1,31 @@
-# CS453 - Individual AI Project
+# CS453 - After-Hours Cleaning Robot (Variant 3)
 
-Choose ONE: Campus Delivery Agent, After-Hours Cleaning Robot, or Library Retrieval Agent. Work independently for two weeks using Colab and your own private GitHub repository. Several students may choose the same story.
+- **Student Name:** مؤيد اتيم الجعيدي
+- **Student ID:** 09231196
+- **Project:** After-Hours Cleaning Robot
+- **Generated Variant:** Variant 3 (`start = 'S'`, `goal = 'D'`, `removed_edge = ('E', 'G')`)
+- **Notebook:** `project.ipynb`
 
-[Create your private project copy](https://github.com/AliElzaileek/cs453-ai-project-starter/generate)
+## Overview
 
-## Start here
+This repository contains my individual two-week CS453 workbook implementation and explanations for the **After-Hours Cleaning Robot** problem on **Variant 3** (8 rooms, starting at `'S'`, cleaning target room `'D'`, with edge `('E', 'G')` removed).
 
-1. On the professor's starter repository select **Use this template > Create a new repository**; choose **Private** and name your copy `cs453-ai-project`. Do not fork the public starter or submit a branch to it.
-2. Invite the professor using GitHub username `AliElzaileek`. Work can begin while the invitation is pending.
-3. Read [the student guide](docs/student-guide.pdf) and [GitHub + Colab instructions](docs/github-colab-guide.md). Their manual repository/upload setup is an alternative; with this template, project.ipynb is already included.
-4. Open [project.ipynb](project.ipynb) in Colab through authorized GitHub access, or download it and upload to Colab. Enter your own ID as text, preserving leading zeros, and choose your project.
-5. Complete your README using [the student README template](docs/STUDENT_README_TEMPLATE.md); update its Colab link to your own account/repo.
+## Files in This Repository
 
-## Required work
+- `project.ipynb`: Complete notebook containing PEAS & environment analysis, state/action/transition/goal/cost representation, the cleaning simulator, BFS and A* implementations, heuristic admissibility discussion, sources/assistance disclosure, and the submission checklist.
+- `README.md`: Project summary, variant details, file guide, dependencies, and execution instructions.
 
-- Task 1: PEAS and environment.
-- Task 2: representation.
-- Task 4: legal simulator and service action.
-- Task 5: BFS (uninformed), explanation and assigned mission output.
-- Task 6: A* (informed), supplied heuristic explanation and assigned mission output.
-- Tasks 10-11: sources/help disclosure and submission checklist.
+## Dependencies
 
-Original task numbers are retained. Tasks 3, 7, 8 and 9 are removed. No Day 7 checkpoint, standalone ten-case test table, results section or limitations essay is required. Code must still run correctly.
+- Python 3.10+ (tested in Google Colab with Python 3.13.18)
+- Standard library modules only (`copy`, `platform`, `collections.deque`, `heapq`) — no external packages or GPU required.
 
-Week 1: model, simulator and BFS. Week 2: A*, explanation, README and clean execution. No physical robot, website, paid API or GPU is needed.
+## How to Run
 
-## Study references
+1. Open `project.ipynb` in Google Colab (via GitHub or by uploading the notebook).
+2. Ensure `STUDENT_ID = "09231196"` is set in the variant cell to generate Variant 3 (`start='S'`, `goal='D'`, `removed_edge=('E', 'G')`).
+3. Run **Runtime > Restart and run all** and verify that the simulator, BFS, and A* reach `('D', True)` in `2` moves and pass all edge-case checks cleanly.
 
-- [Graph search STUDENT notebook](references/graph-search.ipynb)
-- [Informed search STUDENT notebook](references/informed-search.ipynb)
+## Open in Colab
 
-These are supplied course study material. Cite adaptations and explain your own work. Do not copy classmates' code or outputs; disclose permitted AI assistance and your verification.
-
-## Save and submit
-
-Explicitly save progress from Colab to **your own private repository**, not to this public starter. Drive autosave does not update GitHub. Use the download/upload fallback if integration fails.
-
-Reopen the committed notebook in a fresh Colab session and verify it runs. Submit your **repository URL and final commit URL** in the Google Classroom assignment, then select **Turn in**. The due date/time is announced there; invite GitHub username `AliElzaileek`. This repository does not issue extra deadlines or marks. The full course project continues after the professor returns.
+https://colab.research.google.com/github/maoyed/Maoyed-Al-Jaidi_Artificial-Intelligence-Project/blob/master/project.ipynb
